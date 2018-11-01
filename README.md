@@ -7,11 +7,11 @@ FirebaseAuthenticationSample contains 3 types of authentication
 - Google Sign In Authentication
 - Facebook Authentication
 
-USAGE:
+<b>USAGE:</b>
 
 Clone or download repository & import it into your Android Studio.
 
-Requirements:
+<b>Requirements:</b>
 
 1. Facebook App ID & Facebook Login Protocol Scheme (For Facebook Integration)
 2. Server Web CLient ID. (For authenticate users with firebase server)
