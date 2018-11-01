@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">FirebaseAuthenticationSample</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="already_registered">Already Registered. Login me!</string>
+    <string name="login">LOGIN</string>
+    <string name="get_registered">Not a member? Get registered in Firebase now!</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="back"><u>BACK</u></string>
+    <string name="new_password">New Password</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="txt_email_verification">Please verify your registered email address (Verification link send to your registered email)</string>
+    <string name="email_description">Enter a valid email address</string>
+    <string name="register_with_valid_address"><u>Register with valid Email address</u></string>
+    <string name="skip">SKIP>></string>
+    <string name="login_with_valid_address">Login with verified Email address</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="pswd_reset_email_btn">Send Password Reset Email</string>
+    <string name="remove_user">Remove User</string>
+    <string name="change">Change</string>
+    <string name="main_dashboard">Main Dashboard</string>
+
+
+    <string name="splash_title">Firebase Authentication</string>
+    <string name="splash_text">Authenticate Yourself Using Firebase</string>
+    <string name="or">OR</string>
+    <string name="authentication_failed">Authentication Failed.</string>
+    <string name="enter_email">Please enter email</string>
+    <string name="enter_password">Please enter password</string>
+    <string name="password_length">Password should be atleast 8 characters</string>
+    <string name="name_description">Enter Name</string>
+    <string name="enter_name">Please enter name</string>
+    <string name="valid_email">Enter valid email address</string>
+    <string name="forgot_email_description">An email with instructions to reset password has been sent to your email address. Please follow the instructions in the email to reset your password.</string>
+    <string name="enter_registered_email">Enter your registered email id</string>
+    <string name="reset_email_failed">Failed to send reset email!</string>
+    <string name="new_email">New Email</string>
+    <string name="welcome">Welcome</string>
+    <string name="enter_new_email">Please enter new email</string>
+    <string name="success_updated_email">Email address is updated. Please sign in with new email id!</string>
+    <string name="failed_update_email">Failed to update email!</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_new_password">Please enter new password</string>
+    <string name="success_updated_password">Password is updated, sign in with new password!</string>
+    <string name="failed_update_password">Failed to update password!</string>
+    <string name="failed_delete_account">Failed to delete your account!</string>
+    <string name="profile_deleted">Your profile is deleted:( Create a account now!</string>
+    <string name="or_sign_in_with">Sign in</string>
+
+
+</resources>

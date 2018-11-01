@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "pcvark.com.firebasedemo"
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        debug {
+
+            resValue 'string', "FACEBOOK_APP_ID", FirebaseAuthenticationSample_FACEBOOK_APP_ID
+            resValue 'string', "FB_LOGIN_PROTOCOL_SCHEME", FirebaseAuthenticationSample_FB_LOGIN_PROTOCOL_SCHEME
+            buildConfigField 'String', "DEFAULT_WEB_CLIENT_ID", FirebaseAuthenticationSample_DEFAULT_WEB_CLIENT_ID
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            resValue 'string', "FACEBOOK_APP_ID", FirebaseAuthenticationSample_FACEBOOK_APP_ID
+            resValue 'string', "FB_LOGIN_PROTOCOL_SCHEME", FirebaseAuthenticationSample_FB_LOGIN_PROTOCOL_SCHEME
+            buildConfigField 'String', "DEFAULT_WEB_CLIENT_ID", FirebaseAuthenticationSample_DEFAULT_WEB_CLIENT_ID
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //firebase libraries
+
+//    compile 'com.google.firebase:firebase-messaging:17.3.4'     //firebase cloud messaging
+
+    implementation 'com.google.firebase:firebase-database:16.0.4' // Realtime Database
+    implementation 'com.google.firebase:firebase-auth:16.0.5'// Email Password based authentication
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'// google sign in integration
+    implementation 'com.facebook.android:facebook-login:4.38.0'// facebook integration
+
+
+    implementation 'com.intuit.ssp:ssp-android:1.0.6'// for text size
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'// for layout size
+
+    implementation 'com.android.support:design:28.0.0'
+}
+apply plugin: 'com.google.gms.google-services'
