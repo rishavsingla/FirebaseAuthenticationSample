@@ -20,7 +20,7 @@ android {
 
         }
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
 
             resValue 'string', "FACEBOOK_APP_ID", FirebaseAuthenticationSample_FACEBOOK_APP_ID
