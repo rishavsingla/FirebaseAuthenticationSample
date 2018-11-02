@@ -72,7 +72,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     private void configureFacebookSignIn() {
-
         callbackManager = CallbackManager.Factory.create();
         fb_sign_btn.setReadPermissions("email", "public_profile");
         fb_sign_btn.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
