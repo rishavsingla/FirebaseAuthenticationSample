@@ -80,25 +80,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void getAuthenticationProvider() {
-        List<? extends UserInfo> providerData = currentUser.getProviderData();
-        for (UserInfo userInfo : providerData) {
-            switch (userInfo.getProviderId()) {
-                case Constants.FACEBOOK_PROVIDER:
-                    Log.e(TAG, "User is signed in with Facebook");
-                    disableAccountSettings();
-                    setAuthProvider(3);
-                    break;
-                case Constants.GOOGLE_PROVIDER:
-                    Log.e(TAG, "User is signed in with Google");
-                    disableAccountSettings();
-                    setAuthProvider(2);
-                    break;
-                case Constants.PASSWORD_PROVIDER:
-                    Log.e(TAG, "User is signed in with Password");
-                    setAuthProvider(1);
-                    break;
-            }
+        List<? extends UserInfo> providerData = null;
+        if (currentUser != null) {
+            providerData = currentUser.getProviderData();
+        }
+        if (providerData != null) {
+            for (UserInfo userInfo : providerData) {
+                switch (userInfo.getProviderId()) {
+                    case Constants.FACEBOOK_PROVIDER:
+                        Log.e(TAG, "User is signed in with Facebook");
+                        disableAccountSettings();
+                        setAuthProvider(3);
+                        break;
+                    case Constants.GOOGLE_PROVIDER:
+                        Log.e(TAG, "User is signed in with Google");
+                        disableAccountSettings();
+                        setAuthProvider(2);
+                        break;
+                    case Constants.PASSWORD_PROVIDER:
+                        Log.e(TAG, "User is signed in with Password");
+                        setAuthProvider(1);
+                        break;
+                }
 
+            }
         }
     }
 
